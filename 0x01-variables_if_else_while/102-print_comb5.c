@@ -16,7 +16,7 @@ int main(void)
 
 	while (counter < 99)
 	{
-		for (n = 0; n <= 99; n++)
+		for (n = countr + 1; n <= 99; n++)
 		{
 			putchar((counter / 10) + '0');
 			putchar((counter % 10) + '0');
