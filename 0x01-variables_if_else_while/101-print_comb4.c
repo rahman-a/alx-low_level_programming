@@ -22,11 +22,10 @@ int main(void)
 				putchar(n + '0');
 				putchar(j + '0');
 				putchar(x + '0');
-				if (n < 8 || j < 9 || x < 10)
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				if (n == 7 && j == 8 && x == 9)
+					continue;
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
