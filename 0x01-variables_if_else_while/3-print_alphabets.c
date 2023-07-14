@@ -15,14 +15,14 @@ int main(void)
 	char upper_case = 'A';
 
 	/* print lower case alphabet */
-	while (lower_case < 'z')
+	while (lower_case <= 'z')
 	{
 		putchar(lower_case);
 		lower_case++;
 	};
 
 	/* print upper case alphabet */
-	while (upper_case < 'Z')
+	while (upper_case <= 'Z')
 	{
 		putchar(upper_case);
 		upper_case++;
