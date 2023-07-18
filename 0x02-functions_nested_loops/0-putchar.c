@@ -14,7 +14,7 @@ int main(void)
 
 	while (letter < 8)
 	{
-		_puthchar(str[letter]);
+		_putchar(str[letter]);
 		letter++;
 	}
 
