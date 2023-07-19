@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * print_times_table - a function that prints the n times table, starting with 0
+ * print_times_table - a function that prints the
+ * n times table, starting with 0
  * @n: the number parameter
  *
  * Return: void
@@ -30,7 +31,7 @@ void print_times_table(int n)
 				if (inc >= 100)
 				{
 					_putchar((inc / 100) + '0');
-					_putchar((inc / 10) + '0');
+					_putchar((inc / 10) % 10 + '0');
 				} else if (inc <= 99 && inc >= 10)
 				{
 					_putchar((inc / 10) + '0');
