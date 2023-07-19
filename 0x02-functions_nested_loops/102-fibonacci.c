@@ -14,7 +14,7 @@ int main(void)
 	int i;
 	long int sq1 = 1, sq2 = 2;
 
-	printf("%ld, %ld,", sq1, sq2);
+	printf("%ld, %ld, ", sq1, sq2);
 
 	for (i = 0; i < 50; i++)
 	{
