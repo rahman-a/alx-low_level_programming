@@ -34,7 +34,7 @@ int numLength(int num)
 int main(void)
 {
 	int count = 0, zeros;
-	unsigned long sq1 = 0, sq2 = 1, sum = 0, sq1a = 0, sq2a = 0, suma = 0;
+	unsigned long sq1 = 1, sq2 = 2, sum, sq1a = 0, sq2a = 0, suma = 0;
 
 	while (count < 98)
 	{
