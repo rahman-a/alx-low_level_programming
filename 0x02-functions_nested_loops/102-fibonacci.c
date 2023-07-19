@@ -20,7 +20,7 @@ int main(void)
 	for (i = 0; i < 48; i++)
 	{
 		if (i == 47)
-			printf("%lu \n", sum);
+			printf("%lu\n", sum);
 		else
 			printf("%lu, ", sum);
 
