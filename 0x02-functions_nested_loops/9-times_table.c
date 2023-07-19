@@ -13,16 +13,18 @@ void times_table(void)
 	for (i = 0; i < 10; i++)
 	{
 		_putchar('0');
-		_putchar(',');
-		_putchar(' ');
 		for (j = 1; j < 10;  j++)
 		{
-			inc = i * j;
-			if (inc <= 9)
-				_putchar(' ');
-			_putchar(inc + '0');
 			_putchar(',');
 			_putchar(' ');
+
+			inc = i * j;
+
+			if (inc <= 9)
+				_putchar(' ');
+			else
+				_putchar((inc / 10) + '0');
+			_putchar((inc % 10) + '0');		
 		};
 		_putchar('\n');
 	};
