@@ -12,18 +12,16 @@
 int main(void)
 {
 	int i;
-	long int sq1 = 1, sq2 = 2;
-
-	printf("%ld, %ld, ", sq1, sq2);
+	unsigned long sq1 = 1, sq2 = 2;
 
 	for (i = 0; i < 50; i++)
 	{
-		long int sum = sq1 + sq2;
+		unsigned long sum = sq1 + sq2;
 
 		if (i < 49)
-			printf("%ld, ", sum);
+			printf("%lu, ", sum);
 		else
-			printf("%ld", sum);
+			printf("%lu", sum);
 
 		sq1 = sq2;
 		sq2 = sum;
