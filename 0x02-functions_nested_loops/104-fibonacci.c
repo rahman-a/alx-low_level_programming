@@ -3,12 +3,12 @@
 
 /**
  * numLength - a function to calculate the length of number
- * @n: the targeted number to get its length
+ * @num: the targeted number to get its length
  *
  * Return: numerical rep fo the number length
 */
 
-int numLength(int n)
+int numLength(int num)
 {
 	int length = 0;
 
