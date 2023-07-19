@@ -28,6 +28,5 @@ int main(void)
 		sq2 = sum;
 		sum = sq1 + sq2;
 	};
-	printf("\n");
 	return (0);
 }
