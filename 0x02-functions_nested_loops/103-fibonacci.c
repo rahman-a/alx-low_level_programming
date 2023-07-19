@@ -11,7 +11,7 @@
 
 int main(void)
 {
-	long int sq1 = 1, sq2 = 2, sum = 0, evenNumbers = 0;
+	long int sq1 = 0, sq2 = 1, sum = 0, evenNumbers = 0;
 
 	while (sum <= 4000000)
 	{
