@@ -20,5 +20,7 @@ char *_strcat(char *dest, char *src)
 		track1++;
 		track2++;
 	};
+
+	return dest;
 }
 
