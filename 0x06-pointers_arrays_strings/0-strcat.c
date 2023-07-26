@@ -16,8 +16,7 @@ char *_strcat(char *dest, char *src)
 
 	while (src[track2])
 	{
-		dest[track1] = src[track2];
-		track1++;
+		dest[track1++] = src[track2];
 		track2++;
 	};
 
