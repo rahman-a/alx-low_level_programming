@@ -20,6 +20,6 @@ char *_strcat(char *dest, char *src)
 		track2++;
 	};
 
-	return dest;
+	return (dest);
 }
 
