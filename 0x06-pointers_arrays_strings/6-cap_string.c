@@ -31,26 +31,26 @@ int isDelimiter(char c)
 /**
  * cap_string -  a function that capitalizes all words of a string.
  * @str: string
- * Return: pointer to the resulted capitilazied string
+ * Return: pointer to the resulted capitalized string
 */
 
 char *cap_string(char *str)
 {
-	char *ptr = s;
+	char *ptr = str;
 	int delimiter = 1;
 
-	while (*s)
+	while (*str)
 	{
-		if (isDelimiter(*s))
+		if (isDelimiter(*str))
 			delimiter = 1;
-		else if (isLower(*s) && delimiter)
+		else if (isLower(*str) && delimiter)
 		{
-			*s -= 32;
+			*str -= 32;
 			delimiter = 0;
 		}
 		else
-			deliimiter = 0;
-		s++;
+			delimiter = 0;
+		str++;
 	}
 	return (ptr);
 }
