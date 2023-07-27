@@ -15,7 +15,7 @@ char *rot13(char *str)
 
 	while (*str)
 	{
-		for (i = 0; i < 52; i++)
+		for (i = 0; i <= 52; i++)
 		{
 			if (*str == letters[i])
 			{
@@ -23,7 +23,8 @@ char *rot13(char *str)
 				break;
 			}
 		}
+		str++;
 	}
 
-	return (str);
+	return (ptr);
 }
