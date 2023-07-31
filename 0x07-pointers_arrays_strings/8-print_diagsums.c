@@ -17,7 +17,7 @@ void print_diagsums(int *a, int size)
 		acc2 += a[size - i - 1];
 		a += size;
 	}
-	printf("%d,  ", acc1);
+	printf("%d, ", acc1);
 	printf("%d\n", acc2);
 }
 
