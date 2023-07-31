@@ -13,8 +13,8 @@ void print_diagsums(int *a, int size)
 
 	for (i = 0; i < size; i++)
 	{
-		acc1 = a[i];
-		acc2 = a[size - i - 1];
+		acc1 += a[i];
+		acc2 += a[size - i - 1];
 		a += size;
 	}
 	printf("%d,  ", acc1);
