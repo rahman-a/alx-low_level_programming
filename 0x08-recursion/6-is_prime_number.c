@@ -11,7 +11,7 @@ int checkPrime(int n, int b)
 {
 	if (b >= n && n > 1)
 		return (1);
-	if (n % b == 0 && n <= 1)
+	if (n % b == 0 || n <= 1)
 		return (0);
 	return (checkPrime(n, b + 1));
 }
