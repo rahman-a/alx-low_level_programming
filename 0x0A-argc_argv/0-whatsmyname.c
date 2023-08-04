@@ -3,6 +3,8 @@
 /**
  * main - Entry point
  * Description: a program that prints its name, followed by a new line.
+ * @argc: arguments count
+ * @argv: arguments values
  * Return: Always 0 (Success)
 */
 
