@@ -23,7 +23,7 @@ int **alloc_grid(int width, int height)
 		tab[i] = malloc(sizeof(**tab) * width);
 		if (tab[i] == 0)
 		{
-			while (--i)
+			while (i--)
 			{
 				free(tab[i]);
 			}
