@@ -29,11 +29,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		str[i] = s1[i];
 		i++;
 	}
-	if (n >= s2Len)
-	{
-		str[i] = *s2;
-		return (str);
-	}
 	while (j < n)
 	{
 		str[i] = s2[j];
