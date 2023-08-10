@@ -9,7 +9,7 @@
  * Return: pointer
 */
 
-char *_memset(char *s, char b, int size)
+char *_memset(char *s, char b, unsigned int size)
 {
 	char *alt = s;
 
@@ -31,13 +31,12 @@ char *_memset(char *s, char b, int size)
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *loc;
-	int sizeOfArr = sizeof(int) * nmemb;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	loc = malloc(sizeOfArr);
+	loc = malloc(sizeof(int) * nmemb);
 	if (loc == 0)
 		return (NULL);
-	_memset(loc, 0, sizeOfArr);
+	_memset(loc, 0, sizeof(int) * nmemb);
 	return (loc);
 }
