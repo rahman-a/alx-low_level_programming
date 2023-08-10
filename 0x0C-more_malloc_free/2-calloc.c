@@ -2,6 +2,28 @@
 #include "main.h"
 
 /**
+ * _memset - fill memeory with fixed byte
+ * @s: pointer
+ * @b: fixed byte
+ * @size: size of allocated memory
+ * Return: pointer
+*/
+
+char *_memset(char *s, char b, int size)
+{
+	char *alt = s;
+	int i = 0;
+
+	while (i < size)
+	{
+		s[i] = b;
+		i++;
+	}
+
+	return (alt);
+}
+
+/**
  * _calloc - a function that allocates memory for an array, using malloc.
  * @nmemb: integer
  * @size: integer
@@ -10,5 +32,14 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	return (0);
+	void *loc;
+	int sizeOfArr = sizeof(int) * nmemb;
+
+	if (nmemb == 0 || size == 0)
+		return (NULL);
+	loc = malloc(sizeOfArr);
+	if (loc == NULL)
+		return (NULL);
+	_memset(loc, 0, sizeOfArr);
+	return (loc);
 }
