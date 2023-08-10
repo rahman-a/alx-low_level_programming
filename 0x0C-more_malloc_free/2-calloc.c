@@ -12,12 +12,10 @@
 char *_memset(char *s, char b, int size)
 {
 	char *alt = s;
-	int i = 0;
 
-	while (i < size)
+	while (size--)
 	{
-		s[i] = b;
-		i++;
+		*s++ = b;
 	}
 
 	return (alt);
