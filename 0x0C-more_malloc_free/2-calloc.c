@@ -12,10 +12,12 @@
 char *_memset(char *s, char b, unsigned int size)
 {
 	char *alt = s;
+	unsigned int i = 0;
 
-	while (size--)
+	while (i < size)
 	{
-		*s++ = b;
+		s[i] = b;
+		i++;
 	}
 
 	return (alt);
@@ -31,7 +33,7 @@ char *_memset(char *s, char b, unsigned int size)
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *loc;
-	unsigned int memsize = sizeof(int) * nmemb;
+	unsigned int memsize = size * nmemb;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
