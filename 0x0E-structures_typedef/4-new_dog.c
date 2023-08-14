@@ -4,7 +4,7 @@
 #include "dog.h"
 
 /**
- * _strncpy - a function that copies a string.
+ * _strcopy - a function that copies a string.
  * @dest: destination string
  * @src: source string
  * Return: a pointer to the resulting string dest
