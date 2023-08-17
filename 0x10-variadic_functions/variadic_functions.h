@@ -1,5 +1,17 @@
 #ifndef VARIADIC_FUNCTIONS_H
 #define VARIADIC_FUNCTIONS_H
+#include <stdarg.h>
+/**
+ * struct format - struct format
+ *
+ * @type: format types
+ * @print: The function associated
+*/
+typedef struct format
+{
+	char *type;
+	void (*print)(char *, va_list);
+} format_t;
 
 void _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
