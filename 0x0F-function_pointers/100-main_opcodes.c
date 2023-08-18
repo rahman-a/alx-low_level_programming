@@ -13,7 +13,7 @@
 int main(int argc, char **argv)
 {
 	char *p = (char *)main;
-	unsigned int number_of_bytes;
+	int number_of_bytes;
 
 	if (argc != 2)
 	{
@@ -31,11 +31,7 @@ int main(int argc, char **argv)
 
 	while (number_of_bytes--)
 	{
-		printf("%02hhx", *p++);
-		if (number_of_bytes)
-			printf("%s", " ");
-		else
-			printf("\n");
+		printf("%02hhx%s", *p++, number_of_bytes ? " " : "\n");
 	}
 	return (0);
 }
