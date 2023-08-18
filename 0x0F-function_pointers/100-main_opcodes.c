@@ -31,9 +31,9 @@ int main(int argc, char **argv)
 
 	while (number_of_bytes--)
 	{
-		printf("%02hh", *p++);
-		if (b)
-			printf(" ");
+		printf("%02hhx", *p++);
+		if (number_of_bytes)
+			printf("%s", " ");
 		else
 			printf("\n");
 	}
